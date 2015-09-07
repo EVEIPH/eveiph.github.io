@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="icon" type="image/vnd.microsoft.icon"
      href="icon07_02.ico" />
-    <body background="6863745-star-wallpaper.jpg"> 
+    <body background="images.jpg"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,14 +41,16 @@
 
 <p>EVE - Isk per Hour is a Windows program that allows players of EVE Online to determine ways to maximize their Isk per Hour through manufacturing, mining, invention, and reverse engineering.</p>
 
-<p>Please use <a href="https://forums.eveonline.com/default.aspx?g=posts&t=63663" target="_blank">this forum thread</a> or email <a href="mailto:ZifrianEVE@gmail.com">ZifrianEVE@gmail.com</a> to ask questions, report bugs, or provide feedback and feature requests. Thanks!</p>
+<p>Please use <a href="https://forums.eveonline.com/default.aspx?g=posts&t=63663" target="_blank" onclick="trackOutboundLink('Forum Link'); return false;>this forum thread</a> or email <a href="mailto:ZifrianEVE@gmail.com">ZifrianEVE@gmail.com</a> to ask questions, report bugs, or provide feedback and feature requests. Thanks!</p>
 
 <h1>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h1>
 
-<p><a href="http://www.mediafire.com/download/iik703nn79drg29/Eve_Isk_per_Hour_3.1.msi">Get the Windows Installer Here</a></p>
-<p><a href="http://www.mediafire.com/download/cfx294h4faw6dmm/EVEIPH_v3.1_Binaries.zip">Get the Binary Files Here</a></p>
-<p><a href="http://www.mediafire.com/download/a6dc16n5ndqi2ki/README.txt">Get all Patch Notes Here</a></p>
+<p><a href="http://www.mediafire.com/download/iik703nn79drg29/Eve_Isk_per_Hour_3.1.msi" onclick="trackOutboundLink('Installer Download'); return false;>Get the Windows Installer Here</a></p>
+<p><a href="http://www.mediafire.com/download/cfx294h4faw6dmm/EVEIPH_v3.1_Binaries.zip" onclick="trackOutboundLink('Binary Download'); return false;>Get the Binary Files Here</a></p>
+<p><a href="http://www.mediafire.com/download/a6dc16n5ndqi2ki/README.txt" onclick="trackOutboundLink('Patch Notes'); return false;>Get all Patch Notes Here</a></p>
+
+<a href="http://www.example.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Check out example.com</a>
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/VY8he">
   <a href="//imgur.com/a/VY8he">Screenshots</a>
@@ -61,6 +63,7 @@
     <script src="javascripts/scale.fix.js"></script>
     
 <script>
+/** Goggle Analytics for page views **/
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -70,6 +73,21 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script> 
 
   </body>
 </html>
