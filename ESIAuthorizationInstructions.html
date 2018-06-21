@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="chrome=1"><title>EVE Isk per Hour - Application Registration Instructions</title><link rel="stylesheet" href="stylesheets/styles.css"><link rel="stylesheet" href="stylesheets/github-light.css"><link rel="icon" type="image/vnd.microsoft.icon" href="icon07_02.ico"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="chrome=1"><link rel="stylesheet" href="stylesheets/styles.css"><link rel="stylesheet" href="stylesheets/github-light.css"><link rel="icon" type="image/vnd.microsoft.icon" href="icon07_02.ico"></head><body style="background-image: url(background.jpg);" background="background.jpg">
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="chrome=1"><title>EVE Isk per Hour - Application Registration Instructions</title><link rel="stylesheet" href="stylesheets/styles.css"><link rel="stylesheet" href="stylesheets/github-light.css"><link rel="icon" type="image/vnd.microsoft.icon" href="icon07_02.ico"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="chrome=1"><link rel="stylesheet" href="stylesheets/styles.css"><link rel="stylesheet" href="stylesheets/github-light.css"><link rel="icon" type="image/vnd.microsoft.icon" href="icon07_02.ico"></head>
+<body style="background-image: url(background.jpg);" background="background.jpg">
 
 
 
@@ -88,26 +89,19 @@ following permissions:<br>
 <li>esi-characters.read_blueprints.v1</li>
 <li>esi-assets.read_corporation_assets.v1</li>
 <li>esi-corporations.read_blueprints.v1</li>
-<li>esi-industry.read_corporation_jobs.v1</li>
+<li>esi-industry.read_corporation_jobs.v1</li><li>esi-corporations.read_corporation_membership.v1</li>
 </ul>
 <img style="width: 644px; height: 338px;" alt="Permissions" src="createnewapplication2.PNG" hspace="15" vspace="15">
 <p>Permissions to read_skills is required to use IPH.
 Additionally, CCP will periodically update these permission versions
-(v1 to v2, etc.) and you will be able to update that access here.
-Finally, only add permissions that start with 'esi' as CCP is phasing
-out the other options such as 'characterAssetsRead'.</p>
+(v1 to v2, etc.) and you will be able to update that access here.&nbsp;</p>
 <h3><span style="color: white;">Callback URL</span></h3>
 <img style="width: 680px; height: 159px; float: right;" alt="Callback URL" src="createnewapplication3.PNG" hspace="15" vspace="15">Below permissions, you will
 now see an area for entering a callback URL for CCP to return data that
 IPH uses to authorize the program and give access to the scopes you
 have selected.&nbsp;Where indicated in the box, type
-'http://127.0.0.1:{port number},' replacing {port number}&nbsp; the
-port you want to use. 127.0.0.1 is the IP address for 'localhost',
-which is your computer. For the port, if you don't know what to enter,
-use anything over 10000. If you choose 12500 then the final entry will
-be 'http://127.0.0.1:12500'. If in the future you need to update the
-port because another process is using it, you would update it here as
-well as updating in IPH (step below) to resolve the conflict.&nbsp;
+'http://127.0.0.1:12500. 127.0.0.1 is the IP address for 'localhost',
+which is your computer and 12500 is the Port IPH will use to connect and transfer ESI data.
 <h3><br>
 <span style="color: white;"></span></h3>
 <h3><span style="color: white;">Create Application</span></h3>
@@ -128,7 +122,7 @@ In the settings, you see the Client ID, Secret Key, your callback URL
 with port number, and what scopes you have allowed IPH to use. Now,
 open IPH or go back to the original ESI Authorization window to
 complete the process of registering your application for API access. <br>
-<img src="IPHEntryWindow.PNG" alt="EVE IPH Authorization Window" style="width: 265px; height: 331px; float: left;" hspace="15" vspace="15"><br>
+<img src="IPHEntryWindow.PNG" alt="EVE IPH Authorization Window" style="width: 337px; height: 425px; float: left;" hspace="15" vspace="15"><br>
 <table style="text-align: left; width: 586px; height: 160px;" border="0" cellpadding="2" cellspacing="2">
 <tbody>
 <tr>
